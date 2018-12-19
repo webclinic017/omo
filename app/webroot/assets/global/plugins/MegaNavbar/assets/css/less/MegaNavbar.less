@@ -1,0 +1,513 @@
+/* MegaNavbar v2.0.0 (http://www.MegaNavbar.com) Copyright 2014 MegaNavbar.com. All Rights Reserved.
+** Licensed: under Regular License (http://codecanyon.net/licenses/regular) or Extended License (http://codecanyon.net/licenses/extended)
+** We will take legal action against those who copy our HTML content, CSS style sheets and JavaScript functions without a license.
+*/
+
+@skin-name: navbar-inverse;
+
+/* --- NAVBAR --- */
+@navbar-bg: #333;
+@navbar-color: @navbar-bg;
+@navbar-border-color: darken(@navbar-bg, 5%);
+
+/*navbar link base color*/
+@navbar-link-base-color: lighten(@navbar-bg, 60%);
+
+/*main menu default item*/
+@navbar-link-color: @navbar-link-base-color;
+@navbar-link-bg: transparent;
+
+/*main menu default item hover*/
+@navbar-link-hover-color: lighten(@navbar-link-base-color, 10%);
+@navbar-link-hover-bg: transparent;
+
+/*main menu active item*/
+@navbar-link-active-color: @navbar-link-hover-color;
+@navbar-link-active-bg: darken(@navbar-bg, 5%);
+
+/*main menu active item hover*/
+@navbar-link-active-hover-color: @navbar-link-active-color;
+@navbar-link-active-hover-bg: @navbar-link-active-bg;
+
+/*main menu open item*/
+@navbar-link-open-color: @navbar-link-hover-color;
+@navbar-link-open-bg: darken(@navbar-bg, 5%);
+
+/*main menu open item hover*/
+@navbar-link-open-hover-color: @navbar-link-open-color;
+@navbar-link-open-hover-bg: @navbar-link-open-bg;
+
+/*main menu disabled item*/
+@navbar-link-disabled-color: darken(@navbar-link-base-color, 5%);
+@navbar-link-disabled-bg: transparent;
+
+/*main menu disabled item hover*/
+@navbar-link-disabled-hover-color: @navbar-link-disabled-color;
+@navbar-link-disabled-hover-bg: @navbar-link-disabled-bg;
+
+/*main menu text*/
+@navbar-text: lighten(@navbar-bg, 65%);
+
+/*main menu regular link*/
+@navbar-regular-link-color: @navbar-link-color;
+
+/*main menu regular link hover*/
+@navbar-regular-link-hover-color: @navbar-link-hover-color;
+
+/*Brand*/
+@navbar-brand-color: @navbar-link-color;
+@navbar-brand-bg: transparent;
+@navbar-brand-hover-color: @navbar-link-hover-color;
+@navbar-brand-hover-bg: transparent;
+
+/*Toggle button (on small devices)*/
+@navbar-toggle-icon-bar-bg:lighten(@navbar-bg, 60%);
+@navbar-toggle-border-color:lighten(@navbar-bg, 20%);
+@navbar-toggle-bg:@navbar-bg;
+@navbar-toggle-hover-icon-bar-bg:lighten(@navbar-bg, 80%);
+@navbar-toggle-hover-border-color:lighten(@navbar-bg, 20%);
+@navbar-toggle-hover-bg:lighten(@navbar-bg, 7%);
+
+/*dividers*/
+@navbar-divider-color: lighten(@navbar-bg, 5%);
+
+/*forms*/
+@navbar-form-control-color: @menu-link-color;
+@navbar-form-control-bg: lighten(@menu-bg, 0%);
+@navbar-form-control-border: lighten(@menu-bg, 15%);
+@navbar-form-control-shadow-inset-color: fade(@menu-form-control-border, 10%); /*rgba(0,0,0,.075);*/
+@navbar-form-control-shadow-outset-color: fade(lighten(@menu-bg, 30%), 80%); /*rgba(255, 255, 255, .6);*/
+
+/*default button*/
+@navbar-btn-default-hover-color: lighten(@navbar-bg, 70%);
+@navbar-btn-default-hover-bg: darken(@navbar-bg, 0%);
+@navbar-btn-default-hover-border: lighten(@menu-bg, 15%);
+
+@navbar-btn-default-color: @menu-link-color;
+@navbar-btn-default-bg: lighten(@menu-bg, 0%);
+@navbar-btn-default-border: lighten(@menu-bg, 15%);
+
+/* --- END NAVBAR --- */
+
+
+/* --- MENU --- */
+@menu-bg: @navbar-bg + #111;
+@menu-color: lighten(@menu-bg, 60%);
+@menu-border-color: @navbar-border-color;
+@menu-shadow-color: lighten(@menu-bg, -10%);
+
+/*menu link base color*/
+@menu-link-base-color: lighten(@menu-bg, 60%);
+
+/*default menu item*/
+@menu-link-color: @menu-link-base-color;
+@menu-link-bg: transparent;
+
+/*default menu item hover*/
+@menu-link-hover-color: lighten(@menu-link-base-color, 10%);
+@menu-link-hover-bg: darken(@menu-bg, 5%);
+
+/*active menu item*/
+@menu-link-active-color: @menu-link-hover-color;
+@menu-link-active-bg: @menu-link-hover-bg;
+
+/*active menu item hover*/
+@menu-link-active-hover-color: @menu-link-active-color;
+@menu-link-active-hover-bg: @menu-link-active-bg;
+
+/*open menu item*/
+@menu-link-open-color: @menu-link-hover-color;
+@menu-link-open-bg: @menu-link-hover-bg;
+
+/*open menu item hover*/
+@menu-link-open-hover-color: @menu-link-open-color;
+@menu-link-open-hover-bg: @menu-link-open-bg;
+
+/*disabled menu*/
+@menu-link-disabled-color: darken(@menu-link-base-color, 25%);
+@menu-link-disabled-bg: transparent;
+
+/*disabled hover menu*/
+@menu-link-disabled-hover-color: darken(@menu-link-base-color, 25%);
+@menu-link-disabled-hover-bg: transparent;
+
+/*dropdown header color*/
+@menu-dropdown-header-color: #ccc;
+
+/*regular link*/
+@menu-regular-link-color: #62A2D8;
+@menu-regular-link-hover-color: #44A5FF;
+
+/*link description*/
+@menu-description-color: darken(@menu-link-base-color, 15%);
+@menu-description-hover-color: @menu-description-color;
+@menu-description-disabled-color: darken(@menu-link-base-color, 40%);
+@menu-description-disabled-hover-color: @menu-description-disabled-color;
+
+/*dividers*/
+@menu-divider-color: lighten(@menu-bg, 10%);
+
+/*forms*/
+@menu-form-control-color: @menu-link-color;
+@menu-form-control-bg: lighten(@menu-bg, 0%);
+@menu-form-control-border: lighten(@menu-bg, 15%);
+@menu-form-control-shadow-inset-color: fade(@menu-form-control-border, 10%); /*rgba(0,0,0,.075);*/
+@menu-form-control-shadow-outset-color: fade(lighten(@menu-bg, 30%), 80%); /*rgba(255, 255, 255, .6);*/
+
+/*default button*/
+@menu-btn-default-hover-color: lighten(@navbar-bg, 70%);
+@menu-btn-default-hover-bg: darken(@navbar-bg, 0%);
+@menu-btn-default-hover-border: lighten(@menu-bg, 15%);
+
+@menu-btn-default-color: @menu-link-color;
+@menu-btn-default-bg: lighten(@menu-bg, 0%);
+@menu-btn-default-border: lighten(@menu-bg, 15%);
+
+
+
+/* ---LESS CORE --- */
+/*-Do not change the code at the bottom without special need-*/
+
+.navbar.@{skin-name} {
+    background: @navbar-bg;
+    border-color: @navbar-border-color;
+    color: @navbar-color;
+}
+
+.navbar.@{skin-name} .navbar-collapse {
+      background-color: @navbar-bg;
+      border-color: @navbar-border-color;
+}
+
+/* Navbar text */
+.navbar.@{skin-name} .navbar-text {color: @navbar-text;}
+
+
+/* Navbar regular link */
+.navbar.@{skin-name} a.navbar-link {
+    color: @navbar-regular-link-color;
+    background-color: transparent;
+    &:hover, &:focus {
+        color: @navbar-regular-link-hover-color;
+        background-color: transparent;
+    }
+}
+
+/* Navbar brand */
+.navbar.@{skin-name}  .navbar-brand {
+    color: @navbar-brand-color;
+    background-color: @navbar-brand-bg;
+    &:hover, &:focus {
+        color: @navbar-brand-hover-color;
+        background-color: @navbar-brand-hover-bg;
+    }
+}
+
+/* Navbar Toggle botton  (on small devices) */
+.navbar.@{skin-name} .navbar-toggle {
+    border-color: @navbar-toggle-border-color!important;
+    background-color: @navbar-toggle-bg;
+    & .icon-bar {
+        background-color: @navbar-toggle-icon-bar-bg;
+    }
+    &:hover,&:focus {
+        border-color: @navbar-toggle-hover-border-color!important;
+        background-color: @navbar-toggle-hover-bg!important;
+        & .icon-bar {
+            background-color: @navbar-toggle-hover-icon-bar-bg;
+        }
+    }
+}
+
+/*forms navbar*/
+.navbar.@{skin-name} input::-webkit-input-placeholder, .navbar.@{skin-name} textarea::-webkit-input-placeholder {color: fade(@navbar-form-control-color, 50%);}
+.navbar.@{skin-name} input:-moz-placeholder, .navbar.@{skin-name} textarea:-moz-placeholder {color: fade(@navbar-form-control-color, 50%);}
+.navbar.@{skin-name} input::-moz-placeholder, .navbar.@{skin-name} textarea::-moz-placeholder {color: fade(@navbar-form-control-color, 50%);}
+.navbar.@{skin-name} input:-ms-input-placeholder, .navbar.@{skin-name} textarea:-ms-input-placeholder {color: fade(@navbar-form-control-color, 50%);}
+
+.navbar.@{skin-name} .form-control {
+    color: @navbar-form-control-color;
+    background-color: @navbar-form-control-bg;
+    border-color: @navbar-form-control-border;
+    &:focus {
+        -webkit-box-shadow: inset 0 1px 1px @navbar-form-control-shadow-inset-color, 0 0 5px @navbar-form-control-shadow-outset-color;
+        box-shadow: inset 0 1px 1px @navbar-form-control-shadow-inset-color, 0 0 5px @navbar-form-control-shadow-outset-color;
+    }
+}
+
+.navbar.@{skin-name} .navbar-nav > li[class*="dropdown"].dropdown-onhover:hover > a, .navbar.@{skin-name}.dropdown-onhover .navbar-nav > li:hover > a[class*="dropdown"]  {
+        background-color: @navbar-link-open-bg;
+}
+
+/* Main menu */
+.navbar.@{skin-name} .navbar-nav {
+    &> li > a {
+        color: @navbar-link-color;
+        background-color: @navbar-link-bg;
+        &:hover, &:focus {
+            color: @navbar-link-hover-color;
+            background-color: @navbar-link-hover-bg;
+        }
+    }
+    &> li.active > a {
+        color: @navbar-link-active-color;
+        background-color: @navbar-link-active-bg;
+        &:hover, &:focus {
+            color: @navbar-link-active-hover-color;
+            background-color: @navbar-link-active-hover-bg;
+      }
+    }
+    &> li.open > a {
+        color: @navbar-link-open-color;
+        background-color: @navbar-link-open-bg;
+        &:hover, &:focus {
+            color: @navbar-link-open-hover-color;
+            background-color: @navbar-link-open-hover-bg;
+        }
+    }
+    &> li.disabled > a {
+        color: @navbar-link-disabled-color;
+        background-color: @navbar-link-disabled-bg;
+
+        &:hover, &:focus {
+            color: @navbar-link-disabled-hover-color;
+            background-color: @navbar-link-disabled-hover-bg;
+        }
+    }
+}
+
+.navbar.@{skin-name} .dropdown-menu{
+      background: @menu-bg;
+      color: @menu-color;
+      border-color: @menu-border-color;
+    -webkit-box-shadow: 0 9px 12px @menu-shadow-color;
+    box-shadow: 0 9px 12px @menu-shadow-color;
+}
+
+.navbar.@{skin-name} .navbar-nav>li[class*="dropdown"].dropdown-onhover:hover, .navbar.@{skin-name}.dropdown-onhover .navbar-nav>li[class*="dropdown"]:hover,{
+    background-color: @navbar-link-active-bg;
+}
+
+/* Menu description */
+.navbar.@{skin-name} a>span.desc {color: @menu-description-color;}
+.navbar.@{skin-name} a:hover>span.desc {color: @menu-description-hover-color;}
+
+
+/*Menu arrow*/
+@media (min-width: 768px) {
+
+    .navbar.@{skin-name}:not(.no-border).dropdown-onhover .navbar-nav>li:hover>a,.navbar:not(.no-border) li.dropdown-onhover:hover>a,.navbar:not(.no-border) .navbar-nav.dropdown-onhover>li:hover>a {
+      border-color: @navbar-border-color;
+    }
+
+
+    .navbar.@{skin-name}:not(.navbar-fixed-bottom) {
+        &:not(.no-border) {
+            & .navbar-nav{
+                &>.active>a:before {border-top-color: @navbar-border-color;}
+                &>.open>a:before, &>li.dropdown-onhover:not(.disabled):hover>a:before, &.dropdown-onhover>li:not(.disabled):hover>a:before {border-bottom-color: @navbar-border-color; }
+            }
+            &.dropdown-onhover .navbar-nav>li:not(.disabled):hover>a:before{border-bottom-color: @navbar-border-color;}
+        }
+        & .navbar-nav{
+            &>.active>a:after {border-top-color: @navbar-link-active-bg}
+            &>.open>a:after, &>li.dropdown-onhover:not(.disabled):hover>a:after, &.dropdown-onhover>li:not(.disabled):hover>a:after {border-bottom-color: @menu-bg}
+        }
+        &.dropdown-onhover .navbar-nav>li:not(.disabled):hover>a:after{border-bottom-color: @menu-bg}
+    }
+
+    .navbar.@{skin-name}.navbar-fixed-bottom {
+        &:not(.no-border) {
+            & .navbar-nav{
+                &>.active>a:before {border-bottom-color: @navbar-border-color;}
+                &>.open>a:before, &>li.dropdown-onhover:not(.disabled):hover>a:before, &.dropdown-onhover>li:not(.disabled):hover>a:before {border-top-color: @navbar-border-color; }
+            }
+            &.dropdown-onhover .navbar-nav>li:not(.disabled):hover>a:before{border-top-color: @navbar-border-color;}
+        }
+        & .navbar-nav{
+            &>.active>a:after {border-bottom-color: @navbar-link-active-bg;}
+            &>.open>a:after, &>li.dropdown-onhover:not(.disabled):hover>a:after, &.dropdown-onhover>li:not(.disabled):hover>a:after {border-top-color: @menu-bg}
+        }
+        &.dropdown-onhover .navbar-nav>li:not(.disabled):hover>a:after{border-top-color: @menu-bg}
+    }
+}
+
+
+/* Menu default buttons */
+.navbar.@{skin-name} .btn-default {
+    color: @navbar-btn-default-color;
+    background-color: @navbar-btn-default-bg;
+    border-color: @navbar-btn-default-border;
+}
+
+/* Menu default buttons hover, focus, active */
+.navbar.@{skin-name} .btn-default {
+    &:hover, &:focus, &:active, &.active {
+      color: @navbar-btn-default-hover-color;
+      background-color: @navbar-btn-default-hover-bg;
+      border-color: @navbar-btn-default-hover-border;
+    }
+}
+
+/* Menu default buttons */
+.navbar.@{skin-name}  .dropdown-menu .btn-default {
+    color: @menu-btn-default-color;
+    background-color: @menu-btn-default-bg;
+    border-color: @menu-btn-default-border;
+}
+
+/* Menu default buttons hover, focus, active */
+.navbar.@{skin-name}  .dropdown-menu .btn-default {
+    &:hover, &:focus, &:active, &.active {
+      color: @menu-btn-default-hover-color;
+      background-color: @menu-btn-default-hover-bg;
+      border-color: @menu-btn-default-hover-border;
+    }
+}
+
+/* Menu dropdown-header*/
+.navbar.@{skin-name} .dropdown-menu li.dropdown-header {
+  color: @menu-dropdown-header-color;
+}
+
+/* Menu regular link*/
+.navbar.@{skin-name} *:not(li)>a {
+    color: @menu-regular-link-color;
+}
+
+/* Menu regular link hover, focus*/
+.navbar.@{skin-name} *:not(li)>a:hover,
+.navbar.@{skin-name} *:not(li)>a:focus {
+    color: @menu-regular-link-hover-color;
+}
+
+/* Menu Items link */
+.navbar.@{skin-name} .dropdown-menu>li>a {
+    color: @menu-link-color;
+    background-color:@menu-link-bg;
+}
+
+/* Menu Items link hover, focus*/
+.navbar.@{skin-name} .dropdown-menu>li>a:hover, .navbar.@{skin-name} .dropdown-menu>li>a:focus {
+    color: @menu-link-hover-color;
+    background-color:@menu-link-hover-bg;
+}
+
+/* Submenu not collapsible */
+.navbar.@{skin-name} .navbar-nav>li .dropdown-menu:not([class*="collaps"]) {
+    background-color: @menu-bg;
+    color: @menu-color;
+    border-color: @menu-border-color;
+    -webkit-box-shadow: 0 9px 12px @menu-shadow-color;
+    box-shadow: 0 9px 12px @menu-shadow-color;
+}
+
+.navbar.@{skin-name}.navbar-fixed-bottom .navbar-nav>li .dropdown-menu:not([class*="collaps"]) {
+    -webkit-box-shadow: 0 -9px 12px @menu-shadow-color;
+    box-shadow: 0 -9px 12px @menu-shadow-color;
+}
+
+
+/*forms menu*/
+.navbar.@{skin-name} .dropdown-menu input::-webkit-input-placeholder, .navbar.@{skin-name} .dropdown-menu textarea::-webkit-input-placeholder {color: fade(@menu-form-control-color, 50%);}
+.navbar.@{skin-name} .dropdown-menu input:-moz-placeholder, .navbar.@{skin-name} .dropdown-menu textarea:-moz-placeholder {color: fade(@menu-form-control-color, 50%);}
+.navbar.@{skin-name} .dropdown-menu input::-moz-placeholder, .navbar.@{skin-name} .dropdown-menu textarea::-moz-placeholder {color: fade(@menu-form-control-color, 50%);}
+.navbar.@{skin-name} .dropdown-menu input:-ms-input-placeholder, .navbar.@{skin-name} .dropdown-menu textarea:-ms-input-placeholder {color: fade(@menu-form-control-color, 50%);}
+
+
+.navbar.@{skin-name} .dropdown-menu .form-control {
+    color: @menu-form-control-color;
+    background-color: @menu-form-control-bg;
+    border-color: @menu-form-control-border;
+    &:focus {
+        -webkit-box-shadow: inset 0 1px 1px @menu-form-control-shadow-inset-color, 0 0 5px @menu-form-control-shadow-outset-color;
+        box-shadow: inset 0 1px 1px @menu-form-control-shadow-inset-color, 0 0 5px @menu-form-control-shadow-outset-color;
+    }
+}
+
+/*menu links*/
+.navbar.@{skin-name} .navbar-nav .dropdown-menu {
+    li:not(.list-group) > a {
+        color: @menu-link-color;
+        background-color: @menu-link-bg;
+        &:hover, &:focus {
+            color: @menu-link-hover-color;
+            background-color: @menu-link-hover-bg;
+        }
+    }
+    li.active > a {
+        color: @menu-link-active-color;
+        background-color: @menu-link-active-bg;
+        &:hover, &:focus {
+            color: @menu-link-active-hover-color;
+            background-color: @menu-link-active-hover-bg;
+        }
+    }
+    li[class*="-onhover"]:hover>a{
+        color: @menu-link-hover-color;
+        background-color: @menu-link-hover-bg;
+    }
+    li.open > a, li:not(.no-fix) > a.dropdown-toggle:not(.collapsed) {
+        color: @menu-link-open-color;
+        background-color: @menu-link-open-bg;
+        &:hover, &:focus {
+            color: @menu-link-open-hover-color;
+            background-color: @menu-link-open-hover-bg;
+        }
+    }
+    li.disabled > a {
+        color: @menu-link-disabled-color;
+        background-color: @menu-link-disabled-bg;
+        &>span.desc {color: @menu-description-disabled-color;}
+        &:hover>span.desc {color: @menu-description-disabled-hover-color;}
+        &:hover, &:focus {
+            color: @menu-link-disabled-hover-color;
+            background-color: @menu-link-disabled-hover-bg;
+        }
+    }
+}
+
+/*bordered*/
+.navbar.@{skin-name} .navbar-nav li:not(.dropdown)>ul.dropdown-menu.bordered:not(.no-padding):after,
+.navbar.@{skin-name} .navbar-nav li:not(.dropdown)>.dropdown-grid-wrapper>ul.dropdown-menu.bordered:not(.no-padding):after {
+    outline-color: @menu-divider-color;
+}
+
+
+/*dividers*/
+.navbar.@{skin-name} .navbar-nav>li.divider{
+    background-color: @navbar-divider-color;
+}
+
+.navbar.@{skin-name} .dropdown-menu li.divider, .navbar.@{skin-name} .navbar-nav .v-divided>*:before, .navbar.@{skin-name} .navbar-nav .v-divided>*:after,
+.navbar.@{skin-name} .navbar-nav .h-divided>*:after, .navbar.@{skin-name} .navbar-nav .h-divided>*:first-child:before, .navbar.@{skin-name} .navbar-nav .h-divider:after {
+    background-color: @menu-divider-color;
+}
+
+.navbar.@{skin-name} .navbar-nav .divided>*:before {
+  border-color: @menu-divider-color;
+}
+
+@media (max-width: 767px) {
+    .navbar.@{skin-name} .navbar-nav .open .dropdown-menu .divider {
+        background-color: @menu-divider-color;
+    }
+
+    .navbar.@{skin-name} .navbar-collapse .navbar-nav> .navbar-form, .navbar.@{skin-name} .navbar-collapse>.navbar-form,
+    .navbar.@{skin-name} .navbar-collapse .navbar-nav>li,
+    .navbar.@{skin-name} .navbar-collapse .navbar-nav>a.navbar-link, .navbar.@{skin-name} .navbar-collapse>a.navbar-link,
+    .navbar.@{skin-name} .navbar-collapse .navbar-nav>.navbar-text, .navbar.@{skin-name} .navbar-collapse>.navbar-text,
+    .navbar.@{skin-name} .navbar-collapse .navbar-nav>.navbar-form {
+        border-bottom-color: @navbar-bg - #111!important;
+        -webkit-box-shadow: 0 1px 0 @navbar-bg + #111!important;
+        box-shadow: 0 1px 0 @navbar-bg + #111!important;
+    }
+
+    .navbar.@{skin-name} .navbar-nav>li.dropdown-grid>.dropdown-grid-wrapper>.dropdown-menu,
+    .navbar.@{skin-name} .navbar-nav>li>.dropdown-menu {
+        border-top-color: @menu-divider-color!important;
+        -webkit-box-shadow: 0 -1px 0 @navbar-border-color!important;
+        box-shadow: 0 -1px 0 @navbar-border-color!important;
+    }
+
+}

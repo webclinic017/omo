@@ -1,0 +1,29 @@
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Notice:  Memcache::get(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (111) in /home/stocknet/new/lib/Cake/Cache/Engine/MemcacheEngine.php on line 152
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:01 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:43 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/debug.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:43 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:43 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:44 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[16-Sep-2015 01:00:44 Asia/Dhaka] PHP Warning:  file_put_contents(/home/stocknet/new/app/tmp/logs/error.log): failed to open stream: Permission denied in /home/stocknet/new/lib/Cake/Log/Engine/FileLog.php on line 142
+[31-Oct-2015 01:00:01 Asia/Dhaka] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/stocknet/new/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/stocknet/new/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/stocknet/new/app/Config/core.php(371): Cache::config('_cake_core_', Array)
+#2 /home/stocknet/new/lib/Cake/Core/Configure.php(72): include('/home/stocknet/...')
+#3 /home/stocknet/new/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/stocknet/new/lib/Cake/Console/ShellDispatcher.php(138): require('/home/stocknet/...')
+#5 /home/stocknet/new/lib/Cake/Console/ShellDispatcher.php(100): ShellDispatcher->_bootstrap()
+#6 /home/stocknet/new/lib/Cake/Console/ShellDispatcher.php(54): ShellDispatcher->_initEnvironment()
+#7 /home/stocknet/new/lib/Cake/Console/ShellDispatcher.php(65): ShellDispatcher->__construct(Array)
+#8 /home/stocknet/new/app/Console/cake.php(36): ShellDispatcher::run(Array)
+#9 {main}
+  thrown in /home/stocknet/new/lib/Cake/Cache/Cache.php on line 181

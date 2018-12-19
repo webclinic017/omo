@@ -1,0 +1,1 @@
+<?php echo $this->requestAction("instruments/details/$instrumentId", array("return")); ?>

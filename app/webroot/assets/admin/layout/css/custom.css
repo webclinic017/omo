@@ -1,0 +1,113 @@
+/* here you can put your own css to customize and override the theme */
+
+/* preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e4e7ea;
+    z-index: 10000;
+}
+
+#status {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    font-size: 32px;
+}
+
+div.new_html_code {
+    width:150px;
+    height:100px;
+    min-width:400px;
+    min-height:400px;
+    max-width:500px;
+    max-height:500px;
+    overflow:hidden;
+    display:block;
+    /*border:1px solid red;*/
+}
+/* carousel */
+
+.block-carousel .carousel-inner {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.block-carousel .carousel-control i {
+    display: none;
+    position: absolute;
+    top:40%;
+}
+
+.block-carousel .carousel-control.left i {
+    right:30%;
+}
+
+.block-carousel .carousel-control.right i {
+    left:30%;
+}
+
+.block-carousel .carousel:hover .carousel-control i {
+    display: inline-block;
+}
+
+.block-carousel .carousel-indicators li {
+    background-color: #666;
+}
+
+.block-carousel .carousel-indicators li.active {
+    background-color: #333;
+}
+
+
+.portlet > .portlet-title > .tools > a.feedback {
+    margin-bottom: 2px;
+    background-image:url(../img/portlet-feedback-icon.png);
+    width: 13px;
+}
+.portlet.box > .portlet-title > .tools > a.feedback,
+.portlet.solid > .portlet-title > .tools > a.feedback {
+    background-image:url(../img/portlet-feedback-icon-white.png);
+}
+
+a.list-group-item .list-group-item-share_heading{
+    margin-top: 0px;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-size: 16px;
+}
+.modal-body .input-icon {
+    border-left: 2px solid #35aa47 !important;
+}
+
+
+
+.has-error .help-inline,
+.error .help-block,
+.has-error .control-label {
+    color: #b94a48;
+}
+#chartContainer {
+    width: 100%;
+    height: 600px;
+}
+.chart-meta li i {
+    color:#b5c1c9;
+    font-size:15px;
+}
+
+.chart-meta li:hover i {
+    color:#169ef4;
+}
+.portfolio{
+    clear: both;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}

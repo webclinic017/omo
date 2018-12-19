@@ -1,0 +1,2 @@
+[05-Jul-2017 14:04:06 Asia/Dhaka] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/stocknet/new/app/webroot/xcrud/xcrud_db.php on line 50
+[18-Jan-2018 04:41:49 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/stocknet/public_html/new/app/webroot/xcrud/xcrud_db.php on line 50

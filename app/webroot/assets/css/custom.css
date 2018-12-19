@@ -1,0 +1,142 @@
+/* here you can put your own css to customize and override the theme */
+/* carousel html block. http://stackoverflow.com/questions/11914716/bootstrap-carousel-other-content-than-image*/
+
+/* preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e4e7ea;
+    z-index: 10000;
+}
+
+#status {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    font-size: 32px;
+}
+
+div.new_html_code {
+    width:150px;
+    height:100px;
+    min-width:400px;
+    min-height:400px;
+    max-width:500px;
+    max-height:500px;
+    overflow:hidden;
+    display:block;
+    /*border:1px solid red;*/
+}
+/* carousel */
+
+.block-carousel .carousel-inner {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.block-carousel .carousel-control i {
+    display: none;
+    position: absolute;
+    top:40%;
+}
+
+.block-carousel .carousel-control.left i {
+    right:30%;
+}
+
+.block-carousel .carousel-control.right i {
+    left:30%;
+}
+
+.block-carousel .carousel:hover .carousel-control i {
+    display: inline-block;
+}
+
+.block-carousel .carousel-indicators li {
+    background-color: #666;
+}
+
+.block-carousel .carousel-indicators li.active {
+    background-color: #333;
+}
+
+.dashboard-stat .visual {
+    width: 80px;
+    height:80px;
+    display: block;
+    float: left;
+    padding-top: 0px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.dashboard-stat .visual i {
+    font-size: 45px;
+    line-height: 65px;
+    color: #fff;
+}
+.dashboard-stat .details .desc {
+    text-align: right;
+    font-size: 13px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.middle-footer-widget  {
+    box-shadow: 2px 10px 10px rgb(20, 20, 20);
+}
+
+.header {
+    width: 100%;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    border: 0px;
+    padding: 0px;
+    box-shadow: none;
+    height: 92px;
+    min-height: 42px;
+}
+
+.page-header-fixed .page-container {
+    margin-top: 92px;
+}
+
+.portlet > .portlet-title > .tools > a.feedback {
+    margin-bottom: 2px;
+    background-image:url(../img/portlet-feedback-icon.png);
+    width: 13px;
+}
+.portlet.box > .portlet-title > .tools > a.feedback,
+.portlet.solid > .portlet-title > .tools > a.feedback {
+    background-image:url(../img/portlet-feedback-icon-white.png);
+}
+
+a.list-group-item .list-group-item-share_heading{
+    margin-top: 0px;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-size: 16px;
+}
+.modal-body .input-icon {
+    border-left: 2px solid #35aa47 !important;
+}
+
+
+
+.has-error .help-inline,
+.error .help-block,
+.has-error .control-label {
+    color: #b94a48;
+}
+#chartContainer {
+    width: 100%;
+    height: 600px;
+}

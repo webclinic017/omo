@@ -1,0 +1,184 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-11-20 04:27+0000\n"
+"PO-Revision-Date: 2013-11-20 10:56+0600\n"
+"Last-Translator: Sohail <afmsohail@gmail.com>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: View/Groups/add.ctp:4
+msgid "Add Group"
+msgstr ""
+
+#: View/Groups/add.ctp:9 View/Groups/edit.ctp:10 View/Users/add.ctp:16
+#: View/Users/edit.ctp:17
+msgid "Submit"
+msgstr ""
+
+#: View/Groups/add.ctp:12 View/Groups/edit.ctp:13 View/Groups/index.ctp:9;42
+#: View/Groups/view.ctp:27;53 View/Users/add.ctp:19 View/Users/edit.ctp:20
+#: View/Users/index.ctp:16;58 View/Users/view.ctp:62
+msgid "Actions"
+msgstr ""
+
+#: View/Groups/add.ctp:15 View/Groups/edit.ctp:17 View/Groups/view.ctp:31
+#: View/Users/add.ctp:23 View/Users/edit.ctp:25 View/Users/index.ctp:61
+#: View/Users/view.ctp:68
+msgid "List Groups"
+msgstr ""
+
+#: View/Groups/add.ctp:16 View/Groups/edit.ctp:18 View/Groups/index.ctp:45
+#: View/Groups/view.ctp:33 View/Users/add.ctp:22 View/Users/edit.ctp:24
+#: View/Users/view.ctp:66
+msgid "List Users"
+msgstr ""
+
+#: View/Groups/add.ctp:17 View/Groups/edit.ctp:19 View/Groups/index.ctp:46
+#: View/Groups/view.ctp:34;82 View/Users/index.ctp:60 View/Users/view.ctp:67
+msgid "New User"
+msgstr ""
+
+#: View/Groups/edit.ctp:4 View/Groups/view.ctp:29
+msgid "Edit Group"
+msgstr ""
+
+#: View/Groups/edit.ctp:16 View/Groups/index.ctp:21 View/Groups/view.ctp:73
+#: View/Users/edit.ctp:23 View/Users/index.ctp:37
+msgid "Delete"
+msgstr ""
+
+#: View/Groups/edit.ctp:16 View/Groups/index.ctp:21 View/Groups/view.ctp:30;73
+#: View/Users/edit.ctp:23 View/Users/index.ctp:37 View/Users/view.ctp:65
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Groups/index.ctp:2
+msgid "Groups"
+msgstr ""
+
+#: View/Groups/index.ctp:19 View/Groups/view.ctp:71 View/Users/index.ctp:35
+msgid "View"
+msgstr ""
+
+#: View/Groups/index.ctp:20 View/Groups/view.ctp:72 View/Users/index.ctp:36
+msgid "Edit"
+msgstr ""
+
+#: View/Groups/index.ctp:29 View/Users/index.ctp:45
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Groups/index.ctp:35 View/Users/index.ctp:51
+msgid "previous"
+msgstr ""
+
+#: View/Groups/index.ctp:37 View/Users/index.ctp:53
+msgid "next"
+msgstr ""
+
+#: View/Groups/index.ctp:44 View/Groups/view.ctp:32 View/Users/add.ctp:24
+#: View/Users/edit.ctp:26 View/Users/index.ctp:62 View/Users/view.ctp:69
+msgid "New Group"
+msgstr ""
+
+#: View/Groups/view.ctp:2 View/Users/view.ctp:49
+msgid "Group"
+msgstr ""
+
+#: View/Groups/view.ctp:4;42 View/Users/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/Groups/view.ctp:9
+msgid "Name"
+msgstr ""
+
+#: View/Groups/view.ctp:14;43 View/Users/view.ctp:9
+msgid "Created"
+msgstr ""
+
+#: View/Groups/view.ctp:19;44 View/Users/view.ctp:14
+msgid "Modified"
+msgstr ""
+
+#: View/Groups/view.ctp:30
+msgid "Delete Group"
+msgstr ""
+
+#: View/Groups/view.ctp:38
+msgid "Related Users"
+msgstr ""
+
+#: View/Groups/view.ctp:45 View/Users/view.ctp:19
+msgid "User Id"
+msgstr ""
+
+#: View/Groups/view.ctp:46 View/Users/view.ctp:24
+msgid "First Name"
+msgstr ""
+
+#: View/Groups/view.ctp:47 View/Users/view.ctp:29
+msgid "Middle Name"
+msgstr ""
+
+#: View/Groups/view.ctp:48 View/Users/view.ctp:34
+msgid "Last Name"
+msgstr ""
+
+#: View/Groups/view.ctp:49 View/Users/view.ctp:39
+msgid "Username"
+msgstr ""
+
+#: View/Groups/view.ctp:50 View/Users/view.ctp:44
+msgid "Password"
+msgstr ""
+
+#: View/Groups/view.ctp:51
+msgid "Group Id"
+msgstr ""
+
+#: View/Groups/view.ctp:52 View/Users/view.ctp:54
+msgid "Mobile No"
+msgstr ""
+
+#: View/Markets/home.ctp:33
+msgid "Posts"
+msgstr "রচনা"
+
+#: View/Posts/test.ctp:28
+msgid "Content Loading via Ajax"
+msgstr ""
+
+#: View/Posts/test.ctp:48
+msgid "Sample Form"
+msgstr ""
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: View/Users/edit.ctp:4 View/Users/view.ctp:64
+msgid "Edit User"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: View/Users/view.ctp:2
+msgid "User"
+msgstr ""
+
+#: View/Users/view.ctp:65
+msgid "Delete User"
+msgstr ""

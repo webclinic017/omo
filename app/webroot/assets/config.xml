@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stock xmlns="http://anychart.com/products/stock/schemas/1.0.0/schema.xsd">
+	<data>
+		<data_sets>
+			<data_set id="dataSetMSFT" source_url="./csv/msft_daily.csv">
+				<csv_settings ignore_first_row="true" rows_separator="\n" columns_separator=","/>
+				<locale>
+					<date_time>
+						<format><![CDATA[%yyyy%MM%dd]]></format>
+					</date_time>
+				</locale>
+			</data_set>
+		</data_sets>
+		<data_providers>
+			<general_data_providers>
+				<data_provider data_set="dataSetMSFT" id="dpMSFT">
+					<fields>
+						<field type="Value" column="5" />
+					</fields>
+				</data_provider>
+			</general_data_providers>
+			<scroller_data_providers>
+				<data_provider id="scrDp" data_set="dataSetMSFT" column="4"/>
+			</scroller_data_providers>
+		</data_providers>
+	</data>
+
+	<settings>
+		<charts>
+			<chart>
+				<series_list>
+					<series type="Line" data_provider="dpMSFT" color="#3463B0">
+						<name><![CDATA[MSFT]]></name>
+					</series>
+				</series_list>
+			</chart>
+		</charts>
+		<time_scale>
+            <selected_range type="Custom" start_date="2000-01-02"/>
+        </time_scale>
+		<scroller data_provider="scrDp"/>
+	</settings>
+</stock>

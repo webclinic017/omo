@@ -1,0 +1,152 @@
+<?php
+/**
+ * InstrumentFixture
+ *
+ */
+class InstrumentFixture extends CakeTestFixture {
+
+/**
+ * Fields
+ *
+ * @var array
+ */
+	public $fields = array(
+		'id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'unsigned' => false, 'key' => 'primary'),
+		'exchange_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'index'),
+		'sector_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'index'),
+		'instrument_code' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'name' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'category' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'outstanding_capital' => array('type' => 'string', 'null' => false, 'length' => 50, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'face_value' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'market_lot' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'no_of_securities' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'dse_listing_year' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'cse_listing_year' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'share_percentage_director' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'share_percentage_govt' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'share_percentage_institute' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'share_percentage_foreign' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'share_percentage_public' => array('type' => 'string', 'null' => false, 'length' => 10, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'remarks' => array('type' => 'string', 'null' => false, 'length' => 250, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'address' => array('type' => 'string', 'null' => false, 'length' => 250, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'contact_info' => array('type' => 'string', 'null' => false, 'length' => 250, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'email_webaddress' => array('type' => 'string', 'null' => false, 'length' => 250, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'market_capital' => array('type' => 'string', 'null' => false, 'length' => 11, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'last_agm_held' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'bonus_issue' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'right_issue' => array('type' => 'string', 'null' => false, 'length' => 250, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'year_end' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'reserve_and_surplus' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'half_year_end' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'net_turn_over' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'net_profit_after_tax' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'eps_in_bd' => array('type' => 'string', 'null' => false, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'finance_update_time' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'last_year_eps' => array('type' => 'float', 'null' => false, 'default' => null, 'unsigned' => false),
+		'q1' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q2' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q3' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q4' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'show_at_pe_lists' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 1, 'unsigned' => false),
+		'quarter_year_end' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'last_final_trade_price' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'last_update_date' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'latest_eps_dilution' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'previous_eps_dilution' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'corporate_declaration_restriction' => array('type' => 'integer', 'null' => false, 'default' => '0', 'unsigned' => false),
+		'sb71_index' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'dse_code_bangla' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'charset' => 'utf8'),
+		'name_bangla' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'charset' => 'utf8'),
+		'category_bangla' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'charset' => 'utf8'),
+		'business_segment_bangla' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'charset' => 'utf8'),
+		'nature_of_business' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'eastablish_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 20, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q1_start_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q1_end_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q2_start_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q2_end_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q3_start_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q3_end_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q4_start_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'q4_end_date' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 100, 'collate' => 'latin1_general_ci', 'charset' => 'latin1'),
+		'dsex_index' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'indexes' => array(
+			'PRIMARY' => array('column' => 'id', 'unique' => 1),
+			'dse_code' => array('column' => 'exchange_id', 'unique' => 0),
+			'fk_instruments_sectors1_idx' => array('column' => 'sector_id', 'unique' => 0)
+		),
+		'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'MyISAM')
+	);
+
+/**
+ * Records
+ *
+ * @var array
+ */
+	public $records = array(
+		array(
+			'id' => 1,
+			'exchange_id' => 1,
+			'sector_id' => 1,
+			'instrument_code' => 'Lorem ipsum dolor sit amet',
+			'name' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'category' => 'Lorem ip',
+			'outstanding_capital' => 'Lorem ipsum dolor sit amet',
+			'face_value' => 'Lorem ip',
+			'market_lot' => 'Lorem ip',
+			'no_of_securities' => 'Lorem ipsum dolor sit amet',
+			'dse_listing_year' => 'Lorem ipsum dolor sit amet',
+			'cse_listing_year' => 'Lorem ipsum dolor sit amet',
+			'share_percentage_director' => 'Lorem ip',
+			'share_percentage_govt' => 'Lorem ip',
+			'share_percentage_institute' => 'Lorem ip',
+			'share_percentage_foreign' => 'Lorem ip',
+			'share_percentage_public' => 'Lorem ip',
+			'remarks' => 'Lorem ipsum dolor sit amet',
+			'address' => 'Lorem ipsum dolor sit amet',
+			'contact_info' => 'Lorem ipsum dolor sit amet',
+			'email_webaddress' => 'Lorem ipsum dolor sit amet',
+			'market_capital' => 'Lorem ips',
+			'last_agm_held' => 'Lorem ipsum dolor sit amet',
+			'bonus_issue' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'right_issue' => 'Lorem ipsum dolor sit amet',
+			'year_end' => 'Lorem ipsum dolor sit amet',
+			'reserve_and_surplus' => 'Lorem ipsum dolor sit amet',
+			'half_year_end' => 'Lorem ipsum dolor sit amet',
+			'net_turn_over' => 'Lorem ipsum dolor sit amet',
+			'net_profit_after_tax' => 'Lorem ipsum dolor sit amet',
+			'eps_in_bd' => 'Lorem ipsum dolor sit amet',
+			'finance_update_time' => 1,
+			'last_year_eps' => 1,
+			'q1' => 'Lorem ipsum dolor sit amet',
+			'q2' => 'Lorem ipsum dolor sit amet',
+			'q3' => 'Lorem ipsum dolor sit amet',
+			'q4' => 'Lorem ipsum dolor sit amet',
+			'show_at_pe_lists' => 1,
+			'quarter_year_end' => 'Lorem ipsum dolor sit amet',
+			'last_final_trade_price' => 1,
+			'last_update_date' => 'Lorem ipsum dolor sit amet',
+			'latest_eps_dilution' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'previous_eps_dilution' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'corporate_declaration_restriction' => 1,
+			'sb71_index' => 1,
+			'dse_code_bangla' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'name_bangla' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'category_bangla' => 'Lorem ipsum dolor sit amet',
+			'business_segment_bangla' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'nature_of_business' => 'Lorem ipsum dolor sit amet',
+			'eastablish_date' => 'Lorem ipsum dolor ',
+			'q1_start_date' => 'Lorem ipsum dolor sit amet',
+			'q1_end_date' => 'Lorem ipsum dolor sit amet',
+			'q2_start_date' => 'Lorem ipsum dolor sit amet',
+			'q2_end_date' => 'Lorem ipsum dolor sit amet',
+			'q3_start_date' => 'Lorem ipsum dolor sit amet',
+			'q3_end_date' => 'Lorem ipsum dolor sit amet',
+			'q4_start_date' => 'Lorem ipsum dolor sit amet',
+			'q4_end_date' => 'Lorem ipsum dolor sit amet',
+			'dsex_index' => 1
+		),
+	);
+
+}

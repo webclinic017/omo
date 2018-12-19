@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+    <meta content="" name="Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers." />
+    <meta content="" name="MegaNavbar.com" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/MegaNavbar.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/skins/navbar-inverse.css" title="inverse">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+</head>
+
+
+<body>
+  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+  <div class="jumbotron" style="color: #fff; background-color: #026881; padding: 0;">
+    <div class="container">
+      <h2 class="page-header" style="margin: 25px 0 25px;">
+        <i class="fa fa-credit-card"></i> MegaNavbar. <small style="color: #ddd;">Advanced Navbar for Bootstrap 3.0+ from Twitter.</small>
+      </h2>
+      <p class="text-justify"><small>Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers.</small></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="navbar navbar-inverse" id="main_navbar" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Brand</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <!-- text -->
+          <p class="navbar-text navbar-left"><i class="fa fa-h-square"></i>&nbsp;<span class="hidden-sm hidden-md">Text</span></p>
+
+          <!-- regular link -->
+          <a href="#" class="navbar-link navbar-left"><i class="fa fa-link"></i>&nbsp;<span class="hidden-sm hidden-md">Link</span></a>
+
+          <ul class="nav navbar-nav navbar-left">
+
+            <!-- dropdown default -->
+            <li class="dropdown-short">
+              <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Short<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Header. Menu items</li>
+                <li><a href="#">Default item<span class="desc">Default description</span></a></li>
+                <li class="active"><a href="#" class="">Active item<span class="desc">Active description</span></a></li>
+                <li class="disabled"><a href="#" class="">Disabled item<span class="desc">Disabled description</span></a></li>
+                <li class="open"><a href="#" class="">Open item<span class="desc">Open description</span></a></li>
+                <li class="divider"></li>
+                <li class="dropdown-right-onhover no-fix">
+                  <!-- Menu item with submenu -->
+                  <a data-toggle="collapse" data-target="#id_1234567890" class="dropdown-toggle collapsed"><i class="fa fa-bars"></i> With submenu<span class="desc">With submenu description</span></a>
+                  <!-- start submenu -->
+                  <ul class="dropdown-menu collapse" id="id_1234567890">
+                    <li class="dropdown-header">Submenu header</li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="">Default item<span class="desc">Default description</span></a></li>
+                    <li class="active"><a href="#" class="">Active item<span class="desc">Active description</span></a></li>
+                    <li class="disabled"><a href="#" class="">Disabled item<span class="desc">Disabled description</span></a></li>
+                    <li class="open"><a href="#" class="">Open item<span class="desc">Open description</span></a></li>
+                    <li class="divider"></li>
+                    <li><p><a href=#"><i class="fa fa-link"></i> Regular link<span class="desc">Regular link description</span></a></p></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                  <!-- end submenu -->
+                </li>
+                <li class="divider"></li>
+                <li><p><a href=#">Regular link</a></p></li>
+                <li class="divider"></li>
+                <li>
+                  <form class="navbar-form navbar-right" role="search" style="margin-left: -15px;">
+                    <div class="input-group"><input type="text" placeholder="input" class="form-control"><span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i>&nbsp;</button></span></div>
+                  </form>
+                </li>
+              </ul>
+            </li>
+
+            <!-- divider -->
+            <li class="divider"></li>
+
+            <!-- dropdown disabled -->
+            <li class="dropdown-short disabled"><a>Disabled</a></li>
+
+            <!-- divider -->
+            <li class="divider"></li>
+
+            <!-- wide -->
+            <li class="dropdown-wide">
+              <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-check-square-o"></i> Wide<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                  <address>
+                    <br>
+                    <strong>MegaNavbar, Inc.</strong><br>
+                    123 Folsom Ave, Suite 456<br>
+                    San Francisco, CA 987654<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                  <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">first.last@example.com</a>
+                  </address>
+                </li>
+                <li class="col-xs-6 col-sm-8 col-md-4 col-lg-5">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-8">
+                        <div class="checkbox"><label><input type="checkbox"> Remember me</label></div>
+                      </div>
+                      <div class="col-sm-4">
+                        <button type="submit" class="pull-right btn btn-default">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </li>
+                <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://mapsurl.appspot.com/google/iframe.html#01L-sstHl9h2O"></iframe>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- search form -->
+            <form class="navbar-form-expanded navbar-form navbar-left visible-lg-block visible-md-block visible-xs-block" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" data-width="80px" data-width-expanded="170px" placeholder="Search..." name="query">
+                <span class="input-group-btn"><button class="btn btn-default" type="submit"><i class="fa fa-search"></i>&nbsp;</button></span>
+              </div>
+            </form>
+            <li class="dropdown-grid visible-sm-block">
+              <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-search"></i> Search</a>
+              <div class="dropdown-grid-wrapper" role="menu">
+                <ul class="dropdown-menu col-sm-6">
+                  <li>
+                    <form class="no-margin">
+				        <div class="input-group">
+					        <input type="text" class="form-control">
+					        <span class="input-group-btn"><button class="btn btn-default" type="button">&nbsp;<i class="fa fa-search"></i></button></span>
+				        </div>
+			        </form>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- media -->
+            <li class="dropdown-grid">
+              <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-tasks"></i>&nbsp;<span class="hidden-sm">Media</span><span class="caret"></span></a>
+              <div class="dropdown-grid-wrapper" role="menu">
+                <ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+                  <li>
+                    <div id="carousel-example-generic" class="carousel slide">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 divided">
+                          <ol class="carousel-indicators navbar-carousel-indicators h-divided">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><a href="#" class=""><i class="fa fa-camera"></i> Image<span class="hidden-xs desc">Add images</span></a></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1" class=""><a href="#" class=""><i class="fa fa-youtube-play"></i> Video<span class="hidden-xs desc">Add videos</span></a></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2" class=""><a href="#" class=""><i class="fa fa-envelope"></i> Contact us<span class="hidden-xs desc">Add forms</span></a></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3" class=""><a href="#" class=""><i class="fa fa-map-marker"></i> Show on map<span class="hidden-xs desc">Add Google maps&reg;</span></a></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4" class=""><a href="#" class=""><i class="fa fa-globe"></i> Street view<span class="hidden-xs desc">Add Street view&reg;</span></a></li>
+                          </ol>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="images/cars.jpg">
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/wzqdVJK5rCY?rel=0" allowfullscreen=""></iframe>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <div class="embed-responsive-item">
+                                  <h4 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555; ">Contact us</h4>
+                                  <br>
+                                  <form id="contact" method="post" class="form " role="form">
+                                    <div class="row">
+                                      <div class="col-xs-6 col-md-6 form-group">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required="" autofocus="">
+                                      </div>
+                                      <div class="col-xs-6 col-md-6 form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+                                      </div>
+                                    </div>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Message" rows="4"></textarea>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-xs-9 col-md-9 form-group">
+                                        <a href="#" data-target="#carousel-example-generic" data-slide-to="3" class=""><i class="fa fa-map-marker"></i> Show on map</a><br>
+                                        <a href="#" data-target="#carousel-example-generic" data-slide-to="4" class=""><i class="fa fa-map-marker"></i> Show on street view</a>
+                                      </div>
+                                      <div class="col-xs-3 col-md-3 form-group">
+                                        <button class="btn btn-default pull-right" type="submit">Submit</button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="http://mapsurl.appspot.com/google/iframe.html#01L-sstHl9h2O"></iframe>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="http://maps.google.com/maps?layer=c&amp;cbll=38.889154,-77.048787&amp;cbp=12,-80,,0,0&amp;output=svembed&amp;ll=33.4513,-112.0372"></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+
+            <!-- divider -->
+            <li class="divider"></li>
+                        
+            <!-- account -->
+            <li class="dropdown-grid">
+              <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-lock"></i>&nbsp;<span class="hidden-sm">Account</span><span class="caret"></span></a>
+              <div class="dropdown-grid-wrapper" role="menu">
+                <ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+                  <li>
+                    <div id="carousel-example-account" class="carousel slide">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-lock"></i> Sign in</h3>
+                              <br>
+                              <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                                  <div class="col-sm-9"><input type="text" class="input-sm form-control" id="inputEmail3" placeholder="Email" autocomplete="off"></div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                                  <div class="col-sm-9"><input type="password" class="input-sm form-control" id="inputPassword3" placeholder="Password" autocomplete="off"></div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-3 col-sm-9">
+                                    <button class="btn btn-default pull-right" type="submit"><i class="fa fa-unlock-alt"></i> Sign in</button>
+                                  </div>
+                                </div>
+                              </form>
+                              <p class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="1" ><small>Don’t have a account? Sign up for FREE</small></p>
+                              <p class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="2" ><small>Lost Your Username?</small></p>
+                              <p class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="3" ><small>Lost Your Password?</small></p>
+                            </div>
+                            <div class="item">
+                              <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-user"></i> Create new account</h3>
+                              <br>
+                              <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-5 control-label">Email</label>
+                                  <div class="col-sm-7"><input type="text" class="input-sm form-control" id="inputEmail3" placeholder="Enter your email address" autocomplete="off"></div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-5 control-label">Password</label>
+                                  <div class="col-sm-7"><input type="password" class="input-sm form-control" id="inputPassword3" placeholder="Enter password" autocomplete="off"></div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-5 control-label">Confirm password</label>
+                                  <div class="col-sm-7"><input type="password" class="input-sm form-control" id="inputPassword3" placeholder="Enter confirm password" autocomplete="off"></div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <div class="checkbox">
+                                      <label>
+                                      <input type="checkbox"> <small>I have read and agree to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.</small>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-5 col-sm-7">
+                                    <button class="btn btn-default pull-right" type="submit"><i class="fa fa-save"></i> Create an account</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <!-- Forgot your username -->
+                            <div class="item">
+                              <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-warning"></i> Forgotten your Username?</h3>
+                              <br>
+                              <p class="text-justify">Enter your email address, you signed up with (or entered in your settings), and we'll send you an email with your username.</p>
+                              <br>
+                              <form id="lost_password" method="post" class="form" role="form">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off">
+                                  <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button"><i class="fa fa-envelope"></i> Send it to me!</button>
+                                  </span>
+                                </div>
+                              </form>
+                              <br><br>
+                              <p class="text-justify"><small><i>If you've forgotten your username and password, you must first retrieve your username (using your email address) and then reset your password using those details.</i></small></p>
+                            </div>
+                            <!-- Forgot your password -->
+                            <div class="item">
+                              <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-warning"></i> Forgot your password?</h3>
+                              <br>
+                              <p class="text-justify">Enter your username, and we'll send you an email with a link and instructions to reset your password.
+                                If you signed up without an email address (or removed it from settings), visit the FAQ.
+                              </p>
+                              <br>
+                              <form id="lost_password" method="post" class="form" role="form">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off">
+                                  <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button"><i class="fa fa-envelope"></i> Send it to me!</button>
+                                  </span>
+                                </div>
+                              </form>
+                              <br>
+                              <p class="text-justify"><small><i>If you've forgotten your username and password, you must first <span class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="2">retrieve your username</span> (using your email address) and then reset your password using those details.</i></small></p>
+                            </div>
+                            <div class="item">
+                              <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h3>
+                              <br>
+                              <p class="text-justify" ><i><small>Get the freebies from us and latest updates about YourApp! We hate spam as much as you do, trust us we won't give your details away to other people.</small></i></p>
+                              <br>
+                              <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                  <label for="inputEmail" class="col-sm-5 control-label">Your email address</label>
+                                  <div class="col-sm-7"><input type="text" class="input-sm form-control" id="inputEmail" name="inputEmail" placeholder="Your email address"></div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputName" class="col-sm-5 control-label">Your Name</label>
+                                  <div class="col-sm-7"><input type="text" class="input-sm form-control" id="inputName" name="inputName" placeholder="Your Name"></div>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-5 col-sm-7">
+                                    <button class="btn btn-default pull-right" type="submit"><i class="fa fa-envelope-o"></i> Subscribe</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="item">
+                              <h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-envelope"></i> Contact us</h3>
+                              <br>
+                              <div class="row">
+                                <form class="" role="form">
+                                  <div class="col-xs-6 col-md-6 ">
+                                    <div class="form-group">
+                                      <input type="text" class="input-sm form-control" id="inputName" name="inputName" placeholder="Enter your name">
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-6 col-md-6 ">
+                                    <div class="form-group">
+                                      <input type="password" class="input-sm form-control" id="inputEmail" name="inputEmail" placeholder="Enter your email address">
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-12 ">
+                                    <div class="form-group">
+                                      <input type="password" class="input-sm form-control" id="inputSubject" name="inputSubject" placeholder="Subject ...">
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-12 ">
+                                    <div class="form-group">
+                                      <textarea style="resize: none;" class="form-control"  id="inputMessage" name="inputMessage" placeholder="Message" rows="3"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="form-group col-sm-offset-3 col-sm-9">
+                                    <button class="btn btn-default pull-right" type="submit"><i class="fa fa-chevron-circle-right"></i> Submit</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4" style="border-left: 1px solid #555;">
+                          <ol class="carousel-indicators navbar-carousel-indicators" style="">
+                            <li data-target="#carousel-example-account" data-slide-to="0" class="active"><a href="#" class="">Sign In<span class="desc">Already have an account? Log in</span></a></li>
+                            <li data-target="#carousel-example-account" data-slide-to="1" class=""><a href="#" class="">Sign Up<span class="desc">Create new account</span></a></li>
+                            <li data-target="#carousel-example-account" data-slide-to="2" class=""><a href="#" class="">Forgot username?<span class="desc">No problem, we can remind you by email</span></a></li>
+                            <li data-target="#carousel-example-account" data-slide-to="3" class=""><a href="#" class="">Forgot password?<span class="desc">Don't worry, it happens!</span></a></li>
+                            <li data-target="#carousel-example-account" data-slide-to="4" class=""><a href="#" class="">Subscribe<span class="desc">Subscribe to our Newsletters</span></a></li>
+                            <li data-target="#carousel-example-account" data-slide-to="5" class=""><a href="#" class="">Contact us<span class="desc">If you have any questions ...</span></a></li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+          <h2 class="text-center"><b>Complete online documentation:  <a href="http://meganavbar.com">MegaNavbar.com</a></b></h2>
+        </div>
+
+        <section id="content" style="padding-top: 20px;">
+          <div class="page-header">
+            <h2><i class="fa fa-puzzle-piece"></i> Key Features...</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-arrows-alt"></i> 100% Responsive Layout Design</h4>
+                <p class="text-justify">Responsive page layout on desktops, tablets and smartphones.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa  fa-table"></i> Bootstrap Columns Grid based</h4>
+                <p class="text-justify">Grid systems are used for creating page layouts through a series of rows and columns.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-twitter"></i> 100% Twitter Bootstrap 3.0+ Based</h4>
+                <p class="text-justify">The MegaNavbar originally designed for use with Twitter Bootstrap 3.0+ </p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-caret-square-o-down"></i> 5 dropdown menu options</h4>
+                <p class="text-justify">Like: standart bootstrap, short menu, custom width menu, wide menu & full menu</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-th-large"></i> Numerous submenu display options</h4>
+                <p class="text-justify">Like: dropup on hover, dropdown on click, collapse on hover, dropdown left ...</p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa  fa-unsorted fa-rotate-90"></i> Left or right alignment</h4>
+                <p class="text-justify">You can easily set menu and submenu aligned to the left or to the right</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-tablet"></i> Multi-device friendly</h4>
+                <p class="text-justify">Responsive pages layout on desktops, tablets and smartphones.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-flask"></i> Unlimited Color Schemes</h4>
+                <p class="text-justify">MegaNavbar use a modern technology (Less) that allows you to create your own schemes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-desktop"></i> Easy integration to any Web Project</h4>
+                <p class="text-justify">Easy integration into your existing or new web project or application.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-ban"></i> No additional JavaScript Required</h4>
+                <p class="text-justify">MegaNavbar doesn't require additional JavaScript, except scripts used by Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-flag"></i> Font Awesome Icons Included</h4>
+                <p class="text-justify">Font Awesome gives you scalable vector icons. For more info check out <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-youtube"></i> Responsive embed Integrated</h4>
+                <p class="text-justify">Responsive Video, Google Map, Google Streetview and so integrated</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa fa-envelope-square"></i> 24/7 Support Help via Email</h4>
+                <p class="text-justify">If you have any question, comments or suggestion, please let us know, by contact us via email</p>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa  fa-info-circle"></i> Detailed documentation included</h4>
+                <p class="text-justify">You can find basic information and numerous examples of usage in our documentation</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 panel-group">
+              <div class="inner">
+                <h4><i class="fa  fa-ellipsis-h"></i> and so more...</h4>
+                <p class="text-justify">MegaNavbar fixation, set borders, set rounding, set caret style, set shadows, vertical & horisontal dividers ... </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <footer style="background-color: #026881; color: #fff;">
+      <p class="text-center" style="padding: 15px; margin: 0;">2014 &copy; MegaNavbar.com All Rights Reserved. We will take legal action against those who copy our HTML content, CSS style sheets and JavaScript functions  without a license.</p>
+  </footer>
+
+  <script>
+
+      //Start Fix MegaNavbar on scroll page
+      var navHeight = $('#main_navbar').offset().top;
+      FixMegaNavbar(navHeight);
+      $(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
+
+      function FixMegaNavbar(navHeight) {
+          if (!$('#main_navbar').hasClass('navbar-fixed-bottom')) {
+              if ($(window).scrollTop() > navHeight) {
+                  $('#main_navbar').addClass('navbar-fixed-top')
+                  $('body').css({'margin-top': $('#main_navbar').height()+'px'});
+                  if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+                  else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+              }
+              else {
+                  $('#main_navbar').removeClass('navbar-fixed-top');
+                  $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+                  $('body').css({'margin-top': ''});
+              }
+          }
+      }
+      //Start Fix MegaNavbar on scroll page
+
+      //Next code used to prevent unexpected menu close when using some components (like accordion, tabs, forms, etc), please add the next JavaScript to your page
+      $( window ).load(function() {
+          $(document).on('click', '.navbar .dropdown-menu', function(e) {e.stopPropagation();});
+      });
+
+  </script>
+</body>
+</html>
