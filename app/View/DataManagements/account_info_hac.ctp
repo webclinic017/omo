@@ -46,7 +46,6 @@
                                 <a data-toggle="tab" href="#tab_2">
                                     <i class="fa fa-group"></i> Deposit For  OMO Service </a>
                             </li>
-
                         </ul>
                     </div>
                     <div class="col-md-9 col-sm-9">
@@ -147,8 +146,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                             <!-- END TAB 3 -->
                         </div>
                     </div>

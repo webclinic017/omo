@@ -1547,7 +1547,7 @@ else{
                              var rate_end_range=temp_rate_end_range;
                              }*/
 
-                            if(lower_limit<=temp_rate_start_range && temp_rate_start_range<=upper_limit && lower_limit<=temp_rate_end_range && temp_rate_end_range<=upper_limit)
+                            if((lower_limit<=temp_rate_start_range && temp_rate_start_range<=upper_limit && lower_limit<=temp_rate_end_range && temp_rate_end_range<=upper_limit) || upper_limit == 0)
                             {
                                 //toastr.info("rate ok");
                                 var rate=temp_rate;
