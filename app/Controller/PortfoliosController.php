@@ -269,7 +269,7 @@ class PortfoliosController extends AppController
     public function performance()
     {
         //
-
+        // die('Uc');
       //  Configure::write('debug', 2);
         $this->layout = 'ajax';
 

@@ -1,9 +1,0 @@
-[13-Jan-2015 12:26:25 Asia/Dhaka] PHP Fatal error:  Call to a member function find() on a non-object in /home/stocknet/new/app/Console/Command/CronsShell.php on line 2025
-[13-Jan-2015 12:43:43 Asia/Dhaka] PHP Fatal error:  Class 'PortfolioTransaction' not found in /home/stocknet/new/app/Console/Command/CronsShell.php on line 2021
-[13-Jan-2015 13:38:26 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90
-[13-Jan-2015 14:04:35 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90
-[13-Jan-2015 14:05:19 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90
-[13-Jan-2015 14:14:42 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90
-[13-Jan-2015 14:28:51 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90
-[13-Jan-2015 14:29:19 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90
-[13-Jan-2015 14:42:48 Asia/Dhaka] PHP Fatal error:  Call to a member function node() on a non-object in /home/stocknet/new/lib/Cake/Model/Behavior/AclBehavior.php on line 90

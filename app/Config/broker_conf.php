@@ -58,6 +58,7 @@ $config['broker']['hac'] = array(
     'ipo_path' => 'hac/ipo',
 );
 
+$config['broker']['allowed_ip'][5][] ='103.197.207.22';  //selim
 $config['broker']['allowed_ip'][5][] ='202.53.175.238';  //agni
 $config['broker']['allowed_ip'][5][] ='202.125.72.110';  // grameen
 $config['broker']['allowed_ip'][5][] ='103.231.161.72';  // grameen

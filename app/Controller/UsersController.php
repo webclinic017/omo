@@ -27,7 +27,7 @@ class UsersController extends AppController
 
     public function register()
     {
-         //Configure::write('debug', 2);
+         // Configure::write('debug', 2);
         // $this->layout = 'default-login';
 
         if (!$this->data && $this->Session->check('last_post_data')) {
@@ -72,6 +72,9 @@ class UsersController extends AppController
             $this->request->data['User']['group_id'] = 4;
             $this->request->data['User']['active'] ='0';
             $this->request->data['User']['broker_fee'] = $broker_fee;
+            $this->request->data['User']['created'] =date('Y-m-d H:i:s');
+            $this->request->data['User']['modified'] =date('Y-m-d H:i:s');
+            
             $this->User->create();
 
 
